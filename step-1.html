@@ -11,64 +11,506 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="overflow-hidden">
-        <header class="header">
-          <div class="container">
-            <div class="header__content flex">
-              <div class="header__logo"> <a class="logo" href="/" aria-label="merion academy"><img src="static/images/general/logo.svg" alt="logo"></a></div>
-              <div class="header__group">
-                <div class="header__menu">
-                  <div class="header__menu-inner flex">
-                    <div class="header__menu-item header__menu-item--top">
-                      <nav class="header-menu header-topMenu">
-                        <ul class="menu flex">
-                          <li class="menu__item"> <a class="menu__link" href="#">DevOps</a></li>
-                          <li class="menu__item"> <a class="menu__link" href="#">Безоп</a></li>
-                          <li class="menu__item"> <a class="menu__link" href="#">Сети </a></li>
-                          <li class="menu__item"> <a class="menu__link" href="#">Воип</a></li>
-                          <li class="menu__item"> <a class="menu__link" href="#">Разработка</a></li>
-                          <li class="menu__item"> <a class="menu__link" href="#">QA</a></li>
-                          <li class="menu__item"> <a class="menu__link" href="#">Сервера</a></li>
-                          <li class="menu__item"> <a class="menu__link bold" href="#">Академия</a></li>
-                        </ul>
-                      </nav>
-                    </div>
-                    <div class="header__menu-item active">
-                      <nav class="header-menu header-bottomMenu">
-                        <ul class="menu flex">
-                          <li class="menu__item"> <a class="menu__link" href="#">How to</a></li>
-                          <li class="menu__item"> <a class="menu__link" href="#">Новости</a></li>
-                          <li class="menu__item"> <a class="menu__link" href="#">Обзоры </a></li>
-                          <li class="menu__item"> <a class="menu__link" href="#">Теория</a></li>
-                          <li class="menu__item"> <a class="menu__link" href="#">Полезно</a></li>
-                        </ul>
-                      </nav>
-                    </div>
-                  </div>
+      <header class="_header ">
+        <div class="_container-xl">
+            <div class="_header__content _d-flex">
+                <div class="_header__logo"><a class="_logo" href="/merion-academy"><span class="_logo__default"><img
+                                src="https://wiki.merionet.ru/merion-academy/vendor/img/header/general/logo_black.svg" alt="logo"></span><span
+                            class="_logo__active"><img src="https://wiki.merionet.ru/merion-academy/vendor/img/header/general/logo_black.svg"
+                                alt="logo"></span></a>
                 </div>
-                <div class="header__search">
-                  <form class="searchForm" action="/">
-                    <div class="searchForm__inner">
-                      <button class="searchForm__open searchForm__btn" type="button">
-                        <div class="searchForm__open-search"><img src="static/images/general/search-icon.svg" alt="search-icon"></div>
-                        <div class="searchForm__open-close"> <img src="static/images/general/close.svg" alt="close-icon"></div>
-                      </button>
-                      <input class="searchForm__input" type="text" placeholder="Искать в Базе...">
-                      <button class="searchForm__submit searchForm__btn" type="submit"><img src="static/images/general/search-icon.svg" alt="search-icon"></button>
-                    </div>
-                  </form>
+                <div class="_header__courses"><a class="_header-btn _outline-border _header-course _header-open"
+                        href="#">
+                        <span class="_header-btn__txt">Все курсы</span><span class="_header-btn__icon _icon">
+                            <svg class="svg-sprite-icon icon-_down">
+                                <use xlink:href="/merion-academy/vendor/img/header/svg/symbol/sprite.svg#_down"></use>
+                            </svg></span></a></div>
+                <div class="_header__links _d-flex">
+                    <a class="_header-link _d-flex" href="https://wiki.merionet.ru/"> <span
+                            class="_header-link__icon _icon">
+                            <svg class="svg-sprite-icon icon-_book">
+                                <use xlink:href="/merion-academy/vendor/img/header/svg/symbol/sprite.svg#_book"></use>
+                            </svg></span><span class="_header-link__txt">База знаний</span></a>
+                    <a class="_header-btn _outline-border _header-login-btn" href="https://lms.merionet.ru?lang=ru"
+                        target="_blank">Войти</a>
                 </div>
-                <div class="header__m-menu"> <a class="open-menu" href="#" aria-label="mobile menu"><span> </span></a></div>
-              </div>
             </div>
-          </div>
-        </header>
-      </div>
+        </div>
+        <div class="_header-dropdown">
+            <div class="_container-xl">
+                <div class="_header-dropdown__links">
+                    <div class="_header-dropdown__links-item"><a class="_header-btn _outline-border _header-wiki"
+                            href="https://wiki.merionet.ru">База
+                            знаниий </a></div>
+                    <div class="_header-dropdown__links-item"><a class="_header-login _button"
+                            href="https://lms.merionet.ru?lang=ru">Войти</a></div>
+                </div>
+                <div class="_header-dropdown__content _d-flex">
+                    <div class="_header-dropdown__content-left">
+                        <div class="_header-search">
+                            <div class="_header-search__group">
+                                <div class="_header-search__group-left"><a class="_header-search__back _icon" href="#">
+                                        <svg class="svg-sprite-icon icon-return">
+                                            <use
+                                                xlink:href="/merion-academy/vendor/img/header/svg/symbol/sprite.svg#return">
+                                            </use>
+                                        </svg>
+                                    </a></div>
+                                <div class="_header-search__group-right">
+                                    <input class="_header-search__input _input" type="text" placeholder="Поиск курса"><a
+                                        class="_header-search__clear _icon" href="#">
+                                        <svg class="svg-sprite-icon icon-_cross">
+                                            <use
+                                                xlink:href="/merion-academy/vendor/img/header/svg/symbol/sprite.svg#_cross">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="_header-search__dropdown">
+                                <div class="_header-search__dropdown-found">
+                                    <div class="_header-search__dropdown-result">
+                                        <div class="_header-search__list _flex">
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/kurs-po-python"> <span
+                                                        class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/python.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/python.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">Python с
+                                                        нуля</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/devops-inzhener-s-nulya"> <span
+                                                        class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/devops.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/devops.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">DevOps с
+                                                        нуля</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/testirovshchik-po-osnovy-qa-s-nulya">
+                                                    <span class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/qa.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/qa.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">QA тестировщик с
+                                                        нуля</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/bazy-dannyh-s-nulya"> <span
+                                                        class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/db.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/db.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">Базы данных с
+                                                        нуля</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/kurs-po-nosql"> <span
+                                                        class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/nosql.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/nosql.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">Курс по
+                                                        NoSQL</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/kurs-po-sql"> <span
+                                                        class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/sql.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/sql.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">Реляционные БД.
+                                                        SQL</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/onlajn-kurs-po-asterisk"> <span
+                                                        class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/asterisk.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/asterisk.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">Базовый курс по
+                                                        Asterisk</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/polnyj-kurs-po-kompyuternym-setyam">
+                                                    <span class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/network.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/network.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">Сетевые
+                                                        технологии</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/mini-kurs-po-virtualizacii-vmware-vsphere-7">
+                                                    <span class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/virtual.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/virtual.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span
+                                                        class="_header-search__item-txt">Виртуализация</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/kurs-po-linux"> <span
+                                                        class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/linux.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/linux.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">Онлайн курс по
+                                                        Linux</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/kurs-po-windows-server"> <span
+                                                        class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/windows.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/windows.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">MS Windows
+                                                        Server</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/kurs-po-kiberbezopasnosti"> <span
+                                                        class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/security.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/security.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span
+                                                        class="_header-search__item-txt">Кибербезопасность</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/asterisk-pro-prodvinutyj-onlajn-kurs">
+                                                    <span class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/asterisk-pro.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/asterisk-pro.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">Asterisk
+                                                        PRO</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/mini-kurs-po-bgp/"> <span
+                                                        class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/bgp.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/bgp.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">Основы BGP</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/company/intensiv-po-rostu-karery-v-it-ot-hr-ekspertov">
+                                                    <span class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/career.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/career.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">Карьерный
+                                                        интенсив</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/java-razrabotchik-s-nulya"> <span
+                                                        class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/java.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/java.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">Java с нуля</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/python-advanced-prodvinutyj-kurs">
+                                                    <span class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/python-advanced.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/python-advanced.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">Python Advanced.
+                                                        Продвинутый курс</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/frontend-razrabotchik-s-nulya"> <span
+                                                        class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/frontend.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/frontend.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">Фронтенд с
+                                                        нуля</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/avtomatizirovannoe-testirovanie-na-python">
+                                                    <span class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/aqa-python.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/aqa-python.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">Автотестирование на
+                                                        Python</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/git-i-github-s-nulya"> <span
+                                                        class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/git.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/git.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">Git и GitHub с
+                                                        нуля</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/kurs-po-etichnomu-hakingu"> <span
+                                                        class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/ethical-hacking.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/ethical-hacking.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">Этичный
+                                                        хакинг</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/telegram-boty-na-python"> <span
+                                                        class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/python-tg.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/python-tg.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">Telegram-боты на
+                                                        Python</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/avtomatizirovannoe-testirovanie-na-java">
+                                                    <span class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/aqa-java.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/aqa-java.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">Автотестирование на
+                                                        Java</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/onlajn-kurs-po-setevym-tekhnologiyam-huawei">
+                                                    <span class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/network-huawei.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/network-huawei.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">Сетевые технологии
+                                                        Huawei</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/onlajn-kurs-po-typescript"> <span
+                                                        class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/typescript.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/typescript.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">TypeScript</span></a>
+                                            </div>
+                                            <div class="_header-search__list-item">
+                                                <a class="_header-search__item"
+                                                    href="/merion-academy/courses/onlajn-kurs-po-mikrotik"> <span
+                                                        class="_header-search__item-icon">
+                                                        <picture>
+                                                            <source
+                                                                srcset="/merion-academy/vendor/img/course-logos/mikrotik.png"
+                                                                type="image/webp"><img
+                                                                src="/merion-academy/vendor/img/course-logos/mikrotik.png"
+                                                                width="39" height="39" alt="img">
+                                                        </picture>
+                                                    </span><span class="_header-search__item-txt">MiktoTik</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="_header-search__dropdown-all">
+                                        <a class="_header-search__dropdown-link" href="">Все курсы по запросу «» (0)
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="_header-search__dropdown-null">Ничего не найдено</div>
+                            </div>
+                        </div>
+                        <div class="_header-categories _flex">
+                            <div class="_header-categories__item">
+                                <a class="_header-categories__link _outline-border" href="/merion-academy/courses">Все
+                                    курсы</a>
+                            </div>
+                            <div class="_header-categories__item">
+                                <a class="_header-categories__link _outline-border"
+                                    href="/merion-academy/courses/programmirovanie">Программирование</a>
+                            </div>
+                            <div class="_header-categories__item">
+                                <a class="_header-categories__link _outline-border"
+                                    href="/merion-academy/courses/seti">Сети</a>
+                            </div>
+                            <div class="_header-categories__item">
+                                <a class="_header-categories__link _outline-border"
+                                    href="/merion-academy/courses/sistemnoe-administrirovanie">Системное
+                                    администрирование</a>
+                            </div>
+                            <div class="_header-categories__item">
+                                <a class="_header-categories__link _outline-border"
+                                    href="/merion-academy/courses/devops">DevOps</a>
+                            </div>
+                            <div class="_header-categories__item">
+                                <a class="_header-categories__link _outline-border"
+                                    href="/merion-academy/courses/qa">QA</a>
+                            </div>
+                            <div class="_header-categories__item">
+                                <a class="_header-categories__link _outline-border"
+                                    href="/merion-academy/courses/kiberbezopasnost">Кибербезопасность</a>
+                            </div>
+                            <div class="_header-categories__item">
+                                <a class="_header-categories__link _outline-border"
+                                    href="/merion-academy/courses/virtualizaciya">Виртуализация</a>
+                            </div>
+                            <div class="_header-categories__item">
+                                <a class="_header-categories__link _outline-border"
+                                    href="/merion-academy/courses/bazy-dannyh">Базы данных</a>
+                            </div>
+                            <div class="_header-categories__item">
+                                <a class="_header-categories__link _outline-border"
+                                    href="/merion-academy/courses/telefoniya">Телефония</a>
+                            </div>
+                            <!--                        <div class="_header-categories__item">-->
+                            <!--                            <a class="_header-categories__link _outline-border"-->
+                            <!--                               href="/merion-academy/courses/karera--><!--">Карьера</a></div>-->
+                        </div>
+                    </div>
+                    <div class="_header-dropdown__content-right">
+                        <div class="_header-banner">
+                            <div class="_header-banner__img"><img
+                                    src="/merion-academy/vendor/img/header/general/h-banner-img.svg" alt=""></div>
+                            <div class="_header-banner__title bold"><a class="header-h-link"
+                                    href="/merion-academy/company/intensiv-po-rostu-karery-v-it-ot-hr-ekspertov">Поможем
+                                    прокачать&nbsp;карьеру!</a></div>
+                            <div class="_header-banner__txt">Всем студентам мы предоставляем бесплатный интенсив по
+                                карьерному росту, разработанный совместно с&nbsp;экспертами из центра развития карьеры
+                                «ЭЙЧ».
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="_header-overlay"></div>
+      </header>
 
       <main>
 
       </main>
-      
+
       <footer class="footer">
         <div class="footer__top">
           <div class="container">
