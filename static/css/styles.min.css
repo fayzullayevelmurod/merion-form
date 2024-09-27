@@ -342,6 +342,16 @@ template {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
+  font-family: 'Benzin-Semibold';
+  src: url("../fonts/benzin/Benzin-Semibold.eot") format("eot"),
+  url("../fonts/benzin/Benzin-Semibold.ttf") format("ttf"),
+  url("../fonts/benzin/Benzin-Semibold.woff") format("woff"),
+  url("../fonts/benzin/Benzin-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
   font-family: 'Nunito';
   src: url("../fonts/Nunito-Bold.woff2") format("woff2"), url("../fonts/Nunito-Bold.woff") format("woff");
   font-weight: bold;
@@ -2212,6 +2222,104 @@ input {
 
 .success .success_head .left_text {
   display: none;
+}
+
+.step_one h1 {
+  font-family: "Benzin-Semibold";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 57.6px;
+  color: #1F1F1F;
+  margin: 81px 0 64px 0;
+}
+
+.step_one blockquote {
+  padding: 24px 24px 24px 30px;
+  border-radius: 30px;
+  background-color: #FFECC7;
+  display: flex;
+  align-items: start;
+  gap: 16px;
+  margin-bottom: 64px;
+}
+
+.step_one blockquote img {
+  flex-shrink: 0;
+}
+
+.step_one blockquote span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #000000;
+}
+
+.step_one blockquote span a {
+  color: #6060F0;
+}
+
+.step_one h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #1F1F1F;
+  margin-bottom: 16px;
+}
+
+.step_one h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: #1F1F1F;
+  margin: 0 0 64px 0;
+}
+
+.step_one_in {
+  padding: 48px;
+  border-radius: 25px;
+  background-color: #F1F2F6;
+}
+
+.step_one_in span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.step_one_in .step_one_in_top_block {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.step_one_in .step_one_in_top_block input {
+  border: 1px solid #DBDBDB;
+  font-family: "Montserrat" ,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  color: #1F1F1FB2;
+  padding: 16px;
+  border-radius: 15px;
+}
+
+.step_one_in .step_one_in_top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+  margin-bottom: 48px;
+}
+
+.step_one_in .step_one_in_bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
 }
 
 @media only screen and (max-width: 1450px) {
