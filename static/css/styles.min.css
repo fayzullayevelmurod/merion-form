@@ -442,8 +442,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: 'Nunito';
-  color: var(--main);
-  background: var(--page-bg); }
+  color: var(--main); }
 
 *,
 *::before,
@@ -2115,3 +2114,77 @@ input {
 /* step */
 
 /* step */
+
+/* fail */
+.fail {
+  margin: 88px 0;
+}
+
+.fail .fail_in {
+  padding: 48px 64px;
+  border-radius: 25px;
+  background-color: #F1F2F6;
+}
+
+.fail .fail_in h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #1F1F1F;
+  margin-bottom: 24px;
+}
+
+.fail .fail_in p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38.4px;
+  color: #1F1F1F;
+}
+
+.fail .fail_in p a {
+  color: #6060F0;
+}
+
+@media only screen and (max-width: 1450px) {
+  .fail .fail_in {
+    padding: 48px;
+  }
+}
+
+@media only screen and (max-width: 993px) {
+  .fail .fail_in h3 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .fail .fail_in p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .fail {
+    margin: 48px 0;
+  }
+
+  .fail .fail_in {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .fail .fail_in h3 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 48px;
+  }
+
+  .fail .fail_in p {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+}
+/* fail */
