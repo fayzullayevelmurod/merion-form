@@ -2384,6 +2384,14 @@ input {
   height: 51px;
 }
 
+.step_btns .next_btn span {
+  color: #FFFFFF;
+}
+
+.step_btns .next_btn .media {
+  display: none;
+}
+
 @media only screen and (max-width: 1450px) {
   .fail .fail_in {
     padding: 48px;
@@ -2563,6 +2571,100 @@ input {
 
   .success .success_head h3 br {
     display: block;
+  }
+
+  .step_one h1 {
+    font-size: 24px;
+    line-height: 28.8px;
+    margin: 48px 0;
+  }
+
+  .step_one blockquote {
+    padding: 12px 20px 12px 24px;
+    margin-bottom: 48px;
+    position: relative;
+  }
+
+  .step_one blockquote::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: -4px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: calc(100% - 2px);
+    width: 90%;
+    border-radius: 30px;
+    background-color: #D98F00;
+  }
+
+  .step_one blockquote img {
+    display: none;
+  }
+
+  .step_one blockquote span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .step_one h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .step_one h6 {
+    font-size: 16px;
+    line-height: 19.2px;
+    margin-bottom: 48px;
+  }
+
+  .step_one .step_one_in {
+    padding: 24px;
+  }
+
+  .step_one .step_one_in span {
+    margin-bottom: 8px;
+  }
+
+  .step_one .step_one_in .step_one_in_top {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  .step_one .step_one_in .step_one_in_bottom {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .step_btns {
+    margin: 48px 0;
+  }
+
+  .step_btns .next_btn {
+    width: 117px;
+  }
+
+  .step_btns .prev_btn {
+    width: 62px;
+  }
+
+  .step_btns .next_btn .media {
+    display: flex;
+  }
+
+  .step_btns .next_btn .desktop {
+    display: none;
+  }
+
+  .step_btns .prev_btn span {
+    display: none;
+  }
+
+  .step_btns .prev_btn svg {
+    display: flex;
+    flex-shrink: 0;
   }
 
 }
