@@ -2157,6 +2157,13 @@ input {
   color: #6060F0;
 }
 
+.fail .fail_in p a:hover {
+  color: #4B47EF;
+}
+.fail .fail_in p a:active {
+  color: #3733F1;
+}
+
 .success {
   margin: 111px 0 0 0;
 }
@@ -2200,6 +2207,13 @@ input {
 
 .success p a {
   color: #6060F0;
+}
+
+.success p a:hover {
+  color: #4B47EF;
+}
+.success p a:active {
+  color: #3733F1;
 }
 
 .success .success_in {
@@ -2258,6 +2272,12 @@ input {
 .step_one blockquote span a {
   color: #6060F0;
 }
+.step_one blockquote span a:hover {
+  color: #4B47EF;
+}
+.step_one blockquote span a:active {
+  color: #3733F1;
+}
 
 .step_one h3 {
   font-family: "Montserrat", sans-serif;
@@ -2294,6 +2314,7 @@ input {
 
 .step_one_in .step_one_in_top_block {
   display: flex;
+  justify-content: end;
   flex-direction: column;
   flex: 1;
 }
@@ -2345,11 +2366,11 @@ input {
   justify-content: center;
 }
 
-/* .step_btns .step_one_prev {
+.step_btns .step_one_prev {
   opacity: 0;
   position: relative;
   z-index: -1;
-} */
+}
 
 .step_btns .prev_btn svg {
   display: none;
@@ -2390,6 +2411,22 @@ input {
 
 .step_btns .next_btn .media {
   display: none;
+}
+
+.prev_btn:hover {
+  background-color: #E9EBF1;
+}
+
+.prev_btn:active {
+  background-color: #E0E2EB;
+}
+
+.next_btn:hover {
+  background-color: #4B47EF;
+}
+
+.next_btn:active {
+  background-color: #3733F1;
 }
 
 @media only screen and (max-width: 1450px) {
