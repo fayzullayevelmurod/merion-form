@@ -2345,6 +2345,29 @@ input {
   justify-content: center;
 }
 
+/* .step_btns .step_one_prev {
+  opacity: 0;
+  position: relative;
+  z-index: -1;
+} */
+
+.step_btns .prev_btn svg {
+  display: none;
+}
+
+.step_btns span {
+  font-family: "Montserrat", span;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #1F1F1F;
+}
+
+.step_btns span b {
+  font-weight: 500;
+  color: #1F1F1F;
+}
+
 .step_btns .next_btn {
   display: flex;
   align-items: center;
@@ -2400,7 +2423,7 @@ input {
   }
 }
 
-@media only screen and (max-width: 993px) {
+@media only screen and (max-width: 1100px) {
   .fail .fail_in h3 {
     font-size: 32px;
     line-height: 38px;
@@ -2449,6 +2472,47 @@ input {
     display: block;
     margin: 0 auto;
     max-width: 327px;
+  }
+
+  .step_one h1 {
+    font-size: 34px;
+    line-height: 40px;
+    margin: 88px 0 48px 0;
+  }
+
+  .step_one blockquote {
+    padding: 20px 20px 20px 24px;
+    margin-bottom: 48px;
+  }
+
+  .step_one blockquote span {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+
+  .step_one h3 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .step_one h6 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 48px;
+  }
+
+  .step_one .step_one_in .step_one_in_top {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .step_one .step_one_in .step_one_in_bottom {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .step_one .step_one_in input {
+    height: 54px;
   }
 }
 
