@@ -2638,6 +2638,10 @@ input {
     gap: 24px;
   }
 
+  .step_one .step_one_in .step_two {
+    gap: 0;
+  }
+
   .step_btns {
     margin: 48px 0;
   }
