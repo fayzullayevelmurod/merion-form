@@ -2322,6 +2322,45 @@ input {
   gap: 64px;
 }
 
+.step_btns {
+  margin: 64px 0 88px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.step_btns .prev_btn {
+  font-family: "Montserrat", span;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  background-color: #F1F2F6;
+  padding: 15px 34px;
+  border-radius: 15px;
+  color: #1F1F1F;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step_btns .next_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", span;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  background-color: #6060F0;
+  padding: 15px 34px;
+  border-radius: 15px;
+  color: #FFFFFF;
+  height: 51px;
+}
+
 @media only screen and (max-width: 1450px) {
   .fail .fail_in {
     padding: 48px;
