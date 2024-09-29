@@ -2337,10 +2337,55 @@ input {
   margin-bottom: 48px;
 }
 
+.step_four_in {
+  margin-top: 64px;
+  display: none;
+}
+
+.step_four_in.active {
+  display: block;
+}
+
+.step_four_in h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38.4px;
+  color: #1F1F1F;
+  margin-bottom: 48px;
+}
+
+.step_four_in h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: #1F1F1F;
+  margin: 72px 0 0 0;
+}
+
 .step_one_in .step_one_in_bottom {
   display: flex;
   flex-wrap: wrap;
   gap: 64px;
+}
+
+.step_one_in ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.step_one_in li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.step_one_in ul span {
+  margin-bottom: 0;
 }
 
 .step_btns {
@@ -2428,6 +2473,53 @@ input {
 .next_btn:active {
   background-color: #3733F1;
 }
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox-container .checkmark {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #DBDBDB;
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+  background-color: #fff;
+}
+
+.checkbox-container .label-text {
+  margin-left: 10px;
+  flex-grow: 1;
+  color: #000;
+}
+
+.checkbox-container input:checked + .checkmark {
+  background-color: #6060F0;
+}
+
+.checkbox-container input:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 @media only screen and (max-width: 1450px) {
   .fail .fail_in {

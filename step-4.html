@@ -520,35 +520,90 @@
                   Обратите внимание, что все поля обязательны для заполнения
                 </h6>
                 <div class="step_one_in">
-                    <div class="step_one_in_top">
-                        <div class="step_one_in_top_block">
-                            <span>
-                              Название курса, который вы приобрели
-                            </span>
-                            <input type="text" placeholder="Полный курс по сетевым технологиям">
-                        </div>
-                        <div class="step_one_in_top_block">
-                            <span>
-                              Дата покупки курса
-                            </span>
-                            <input type="tel" placeholder="">
-                        </div>
-                    </div>
-                    <div class="step_one_in_bottom step_two">
-                        <div class="step_one_in_top_block">
-                            <span>
-                              Номер транзакции, по которой был оплачен курс, либо номер заказа, в случае приобретения его в рассрочку
-                            </span>
-                            <input type="text" placeholder="">
-                        </div>
-                        <div class="step_one_in_top_block">
-                          <span>
-                            Полная стоимость курса на момент его приобретения
-                          </span>
-                          <input type="tel" placeholder="">
-                        </div>
-                    </div>
+                  <span>
+                    Способ оплаты курса
+                  </span>
+                  <ul>
+                    <li>
+                      <label class="checkbox-container bank_btn">
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                        <span class="label-text">
+                          Оплата картой Российского банка
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container bank_btn">
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                        <span class="label-text">
+                          Оплата сервисом «Долями»
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container bank_btn">
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                        <span class="label-text">
+                          Оплата в рассрочку от «Т-Банка»
+                        </span>
+                      </label>
+                    </li>
+                  </ul>
                 </div>
+
+                <div class="step_one_in step_four_in">
+                  <h6>
+                    Реквизиты для возврата при оплате картой Российского банка или с помощью сервиса «Долями»
+                  </h6>
+                  <div class="step_one_in_top">
+                      <div class="step_one_in_top_block">
+                          <span>
+                            Номер карты
+                          </span>
+                          <input type="text">
+                      </div>
+                      <div class="step_one_in_top_block">
+                          <span>
+                            Получатель (ФИО владельца счета)
+                          </span>
+                          <input type="text" placeholder="IVAN IVANOV">
+                      </div>
+                  </div>
+                  <div class="step_one_in_top">
+                    <div class="step_one_in_top_block">
+                        <span>
+                          Наименование банка
+                        </span>
+                        <input type="text" placeholder="ПАО «СБЕРБАНК»">
+                    </div>
+                    <div class="step_one_in_top_block">
+                        <span>
+                          Номер расчетного счета
+                        </span>
+                        <input type="text" placeholder="40817 8101 4300 1578002">
+                    </div>
+                  </div>
+                  <div class="step_one_in_bottom">
+                      <div class="step_one_in_top_block">
+                          <span>
+                            БИК
+                          </span>
+                          <input type="text" placeholder="i044525225">
+                      </div>
+                      <div class="step_one_in_top_block">
+                          <span>
+                            Корреспондентский счет
+                          </span>
+                          <input type="text" placeholder="30101810400000000225">
+                      </div>
+                  </div>
+                  <h5>
+                    Отправляя данную форму, вы подписываетесь под заявлением на возврат
+                  </h5>
+              </div>
 
                 <div class="step_btns">
                     <a href="#" class="prev_btn">
@@ -746,5 +801,21 @@
 <script src="static/js/swiper-bundle.min.js"></script>
 <script src="static/js/jquery-3.3.1.min.js"> </script>
 <script src="static/js/main.js?v4"></script>
+
+<script>
+let bank_btns = document.querySelectorAll('.bank_btn');
+let step_four_ins = document.querySelectorAll('.step_four_in');
+
+bank_btns.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    step_four_ins.forEach((el) => {
+      el.classList.remove('active');
+    });
+
+    step_four_ins[index].classList.add('active');
+  });
+});
+
+</script>
 </body>
 </html>
