@@ -2346,7 +2346,7 @@ input {
   display: block;
 }
 
-.step_four_in h6 {
+.step_four_in .step_four_in_title {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 500;
@@ -2520,6 +2520,25 @@ input {
   transform: translate(-50%, -50%);
 }
 
+.submit_btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  display: none;
+  color: #fff;
+  padding: 15px;
+  width: 100%;
+  height: 51px;
+  border-radius: 20px;
+  background: #6060F0;
+}
+
+.submit_block {
+  display: none;
+}
+
 
 @media only screen and (max-width: 1450px) {
   .fail .fail_in {
@@ -2564,6 +2583,16 @@ input {
   .fail .fail_in h3 {
     font-size: 32px;
     line-height: 38px;
+  }
+
+  .step_four_in h5 {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 64px 0 0 0;
+  }
+
+  .step_four_in {
+    margin-top: 48px;
   }
 
   .fail .fail_in p {
@@ -2651,9 +2680,55 @@ input {
   .step_one .step_one_in input {
     height: 54px;
   }
+
+  .step_four_in .step_four_in_title  {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+
+
+  .step_four_in h5 {
+    display: none;
+  }
+
+  .step_one_in ul {
+    gap: 0px;
+  }
+
+  .submit_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .four_step_btn {
+    margin: 48px 0 24px 0 !important;
+  }
+
+  .submit_block p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: #1F1F1FB2;
+    margin-top: 8px;
+  }
+
+  .submit_block {
+    display: block;
+    margin-bottom: 48px;
+  }
+
+  .four_step_btn .next_btn {
+    position: relative;
+    z-index: -1;
+    opacity: 0;
+    width: 68px !important;
+  }
 
   .fail {
     margin: 48px 0;
@@ -2735,6 +2810,12 @@ input {
   .step_one blockquote span {
     font-size: 14px;
     line-height: 22px;
+  }
+
+  .step_four_in .step_four_in_title  {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 24px;
   }
 
   .step_one h3 {
