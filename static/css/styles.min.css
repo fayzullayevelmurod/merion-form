@@ -2330,6 +2330,21 @@ input {
   border-radius: 15px;
 }
 
+.step_one_in .step_one_in_top_block textarea {
+  border: 1px solid #DBDBDB;
+  font-family: "Montserrat" ,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  color: #1F1F1FB2;
+  padding: 16px;
+  border-radius: 15px;
+}
+
+.step_one_in .step_one_in_top_block textarea:focus {
+  outline: none;
+}
+
 .step_one_in .step_one_in_top {
   display: flex;
   flex-wrap: wrap;
@@ -2537,6 +2552,15 @@ input {
 
 .submit_block {
   display: none;
+}
+
+.step_three_in {
+  margin-top: 64px;
+}
+
+.step_one_in_top_block_bottom {
+  display: flex;
+  flex-direction: column;
 }
 
 
