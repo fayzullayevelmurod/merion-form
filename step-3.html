@@ -605,7 +605,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="step_one_in_top_block">
+                        <div class="step_one_in_top_block step_three_in_right">
                             <span>
                                 Причина оформления возврата
                             </span>
@@ -615,6 +615,41 @@
                             </p>
                         </div>
                     </div>
+                </div>
+                <div class="step_one_in step_three_in">
+                    <ul class="step_three_checkbox">
+                        <li class="error_in">
+                            <span class="error">
+                                Пожалуйста, дайте нам знать, что вы ознакомились с информацией ниже
+                            </span>
+                        </li>
+                        <li>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <span class="checkmark">
+                                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 2.88885L5 7.33329L11 0.666626" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </label>
+                            <span>
+                                Меня проинформировали о возможности перевода на другой курс или о предоставлении пожизненной скидки в размере приобретенного курса на покупку будущих курсов компании «Мерион Нетворкс», однако я вынужден отказаться и прошу вернуть денежные средства за приобретенный мной курс, согласно оферте <a href="https://wiki.merionet.ru/docs/edoferta.pdf">https://wiki.merionet.ru/docs/edoferta.pdf</a>
+                            </span>
+                        </li>
+                        <li>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <span class="checkmark">
+                                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 2.88885L5 7.33329L11 0.666626" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </label>
+                            <span>
+                                Я проинформирован(а), что возврат денежных средств производится тем же способом, каким были получены денежные средства
+                            </span>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="step_btns">
@@ -813,5 +848,20 @@
 <script src="static/js/swiper-bundle.min.js"></script>
 <script src="static/js/jquery-3.3.1.min.js"> </script>
 <script src="static/js/main.js?v4"></script>
+
+<script>
+    const checkboxes = document.querySelectorAll('.custom-checkbox input[type="checkbox"]');
+
+checkboxes.forEach(function(checkbox) {
+    checkbox.addEventListener('change', function() {
+        const parentLabel = checkbox.parentElement;
+        if (checkbox.checked) {
+            parentLabel.classList.add('active');
+        } else {
+            parentLabel.classList.remove('active');
+        }
+    });
+});
+</script>
 </body>
 </html>
