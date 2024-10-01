@@ -2319,6 +2319,31 @@ input {
   flex: 1;
 }
 
+.step_three_in .step_one_in_top {
+  margin-bottom: 0 !important;
+}
+
+.step_one_in .step_three_in_left {
+  display: flex;
+  gap: 48px;
+}
+
+.step_one_in .step_three_in_left input {
+  margin-bottom: 8px;
+}
+
+.step_one_in .step_three_in_left p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.2px;
+  color: #1F1F1FB2;
+}
+
+.step_one_in .step_three_in_left p a {
+  color: #6060F0;
+}
+
 .step_one_in .step_one_in_top_block input {
   border: 1px solid #DBDBDB;
   font-family: "Montserrat" ,sans-serif;
@@ -2339,6 +2364,8 @@ input {
   color: #1F1F1FB2;
   padding: 16px;
   border-radius: 15px;
+  height: 100%;
+  margin: 0 0 8px 0;
 }
 
 .step_one_in .step_one_in_top_block textarea:focus {
