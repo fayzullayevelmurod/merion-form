@@ -1,0 +1,148 @@
+input[type="text"] {
+	z-index: 1;
+	font-size: .8em;
+	margin-top: 10px;
+	outline: 0;
+	-webkit-tap-highlight-color: rgba(255,255,255,0);
+	text-align: left;
+	line-height: 1.2em;
+	padding: .5em;
+	background: #fff;
+	border: 1px solid rgba(34,36,38,.15);
+	color: rgba(0,0,0,.87);
+	border-radius: .28571429rem;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+input[type="text"]:focus {
+	border-color: #85b7d9;
+	background: #fff;
+	color: rgba(0,0,0,.8);
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+input[type="button"] {
+	box-shadow: 0 0 0 0 rgba(34,36,38,.15) inset;
+	font-size: 1rem;
+	cursor: pointer;
+	min-height: 1em;
+	outline: 0;
+	border: 1px solid transparent;
+	background: #e0e1e2 none;
+	color: rgba(0,0,0,.6);
+	margin: 0 .25em 0 0; padding: .788em 1.5em .788em;
+	font-weight: 700;
+	line-height: 1em;
+	font-style: normal;
+	text-align: center;
+	border-radius: .285rem;
+	-webkit-box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34,36,38,.15) inset;
+	box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34,36,38,.15) inset;
+}
+input.error,
+input[type="text"].error:focus {
+	background-color: #fff6f6;
+	color: red;
+  border: 1px solid red;
+}
+p.error-text {
+	position: absolute;
+	bottom: -23px;
+	left: 24px;
+	color: rgba(255, 0, 0, .7);
+	font-size: .6em;
+}
+#raq_next {
+	background-color: #2185d0;
+	color: #fff;
+	text-shadow: none;
+	background-image: none;
+}
+
+#raq_next.submit {
+	background-color: #21ba45;
+}
+#raq_back.disabled {
+	color: #bbbbbb;
+	cursor: unset;
+}
+
+
+.question-container {
+	display: none;
+}
+.active_panel {
+	display: block;
+}
+.question-container {
+	position: relative;
+	font-weight: 500;
+	font-size: 1.2rem;
+	color: #434343;
+	line-height: 30px;
+	margin: 0;
+}
+
+.button-bar {
+	position: relative;
+}
+
+.tick {
+	position: absolute;
+	top: 5px;
+	left: 50px;
+    box-shadow: inset 3px -3px 0 green;
+    height: 8px;
+    transform: rotate(-50deg);
+    width: 20px;
+    margin: 50px auto;
+    transition: all 1s;
+}
+
+.question-title {
+	font-weight: 700;
+	font-size: 2rem;
+	color: #2785d0;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+
+#overlay {
+	position: fixed; /* Sit on top of the page content */
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 2;
+	cursor: pointer;
+}
+
+/****************************
+	Thank You Box
+*****************************/
+.thankyou {
+	margin: auto;
+	width: 260px;
+	height: 160px;
+	margin-top: 190px;
+	background: #fff;
+	padding: 15px 20px;
+	line-height: 25px;
+	border-radius: 4px;
+	text-align: center;
+	box-shadow: -1px 5px 32px 7px rgba(0, 0, 0, 0.5);
+}
+.thankyou input {
+	margin-top: 40px;
+}
+.thankyou h3 {
+	font-size: 3em;
+	font-weight: 700;
+	color: #21ba45;
+	line-height: 50px;
+}
