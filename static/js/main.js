@@ -239,3 +239,130 @@ function positionHeader() {
   activate();
 }
 positionHeader();
+
+
+let stepSwp = document.querySelector('.step-swp');
+
+const swp = new Swiper(stepSwp, {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  // initialSlide: 3,
+  effect: 'fade',
+  allowTouchMove: false,
+})
+
+let stepSwpNext = document.querySelectorAll('.step-swp__next');
+if (stepSwpNext.length) {
+  stepSwpNext.forEach((btn, btnID) => {
+    btn.onclick = e => {
+      e.preventDefault();
+
+      if (btnID == 0) {
+        let inputs = document.querySelectorAll('.step-1 .step_one_in_top_block input');
+        let validation = true;
+  
+        if (inputs.length) {
+          inputs.forEach(inp => {
+            if (!inp.value) {
+              validation = false;
+              inp.classList.add('error')
+            } else {
+              inp.classList.remove('error')
+            }
+          })
+        }
+  
+        if (validation) {
+          swp.slideNext();
+          window.scrollTo(0,0);
+        }
+      }
+
+      if (btnID == 1) {
+        let inputs = document.querySelectorAll('.step-2 .step_one_in_top_block input');
+        let validation = true;
+  
+        if (inputs.length) {
+          inputs.forEach(inp => {
+            if (!inp.value) {
+              validation = false;
+              inp.classList.add('error')
+            } else {
+              inp.classList.remove('error')
+            }
+          })
+        }
+  
+        if (validation) {
+          swp.slideNext();
+          window.scrollTo(0,0);
+        }
+      }
+
+      if (btnID == 2) {
+        let inputs = document.querySelectorAll('.step-3 .step_one_in_top_block input');
+        let validation = true;
+  
+        if (inputs.length) {
+          inputs.forEach(inp => {
+            if (!inp.value) {
+              validation = false;
+              inp.classList.add('error')
+            } else {
+              inp.classList.remove('error')
+            }
+          })
+        }
+  
+        if (validation) {
+          swp.slideNext();
+          window.scrollTo(0,0);
+        }
+      }
+
+      if (btnID == 3 || btnID == 4) {
+        let formBlock = document.querySelector('.step_four_in');
+        let inputs = document.querySelectorAll('.step-4 .step_one_in_top_block input[type="text"]');
+        let validation = true;
+
+        let bankRadio = document.querySelectorAll('.bank_btn-1 input[type="radio"]');
+        
+        if (!bankRadio[1].checked && !bankRadio[2].checked) {
+          validation = false;
+        }
+
+        if (formBlock.classList.contains('active')) {
+          validation = true;
+          if (inputs.length) {
+            inputs.forEach(inp => {
+              if (!inp.value) {
+                validation = false;
+                inp.classList.add('error')
+              } else {
+                inp.classList.remove('error')
+              }
+            })
+          }
+        }
+  
+        if (validation) {
+          swp.slideNext();
+          window.scrollTo(0,0);
+        }
+
+      }
+
+    }
+  })
+}
+
+let stepSwpPrev = document.querySelectorAll('.step-swp__prev');
+if (stepSwpPrev.length) {
+  stepSwpPrev.forEach((btn, btnID) => {
+    btn.onclick = e => {
+      e.preventDefault();
+      swp.slidePrev();
+      window.scrollTo(0,0);
+    }
+  })
+}

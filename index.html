@@ -5,6 +5,7 @@
 <title>Step</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="keywords" content="">
+<link rel="stylesheet" href="./static/css/step.css">
 <link rel="stylesheet" type="text/css" href="static/css/swiper-bundle.min.css">
 <link rel="stylesheet" type="text/css" href="static/css/styles.min.css?v4">
 <link rel="stylesheet" href="./static/fonts/Montserrat/stylesheet.css">
@@ -508,86 +509,552 @@
     </header>
 
     <main>
-        <section class="step_one">
-            <div class="container">
-                <h1>
-                    Заявление о возврате денежных средств
-                </h1>
-                <blockquote>
-                    <img src="./static/images/general/blockquote_icon.svg" alt="">
-                    <span>
-                        В случае, если оплата производилась с иностранной карты, пожалуйста, не заполняйте форму и свяжитесь с нами в Telegram: <a href="#">@merion_academy_bot</a> или напишите на почту <a href="#">info@merionet.ru</a>
-                    </span>
-                </blockquote>
-                <h3>
-                    ШАГ 1. Основные данные
-                </h3>
-                <h6>
-                    Обратите внимание, что все поля обязательны для заполнения
-                </h6>
-                <div class="step_one_in">
-                    <div class="step_one_in_top">
-                        <div class="step_one_in_top_block">
-                            <span>
-                                Ваше ФИО
-                            </span>
-                            <input type="text">
-                        </div>
-                        <div class="step_one_in_top_block">
-                            <span>
-                                Телефон
-                            </span>
-                            <input type="tel">
-                        </div>
-                    </div>
-                    <div class="step_one_in_bottom">
-                        <div class="step_one_in_top_block">
-                            <span>
-                                Почта, на которую был приобретен курс
-                            </span>
-                            <input type="text" placeholder="ivan@ivanov.ru">
-                        </div>
-                        <div class="step_one_in_top_block">
-                            <span>
-                                ИНН
-                            </span>
-                            <input type="text">
-                        </div>
-                    </div>
-                </div>
 
-                <div class="step_btns">
-                    <a href="#" class="prev_btn step_one_prev">
-                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_52_4248)">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.82915 14.3269C10.057 14.0962 10.057 13.722 9.82915 13.4913L4.40829 8L9.82915 2.50875C10.057 2.27798 10.057 1.90384 9.82915 1.67307C9.60134 1.44231 9.23199 1.44231 9.00419 1.67307L3.17085 7.58217C2.94305 7.81293 2.94305 8.18707 3.17085 8.41784L9.00419 14.3269C9.23199 14.5577 9.60134 14.5577 9.82915 14.3269Z" fill="#1F1F1F"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_52_4248">
-                            <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
-                            </clipPath>
-                            </defs>
-                        </svg>
-                        <span>
-                            Назад
-                        </span>
-                    </a>
-                    <div class="step_count">
-                        <span>
-                            Шаг <b>1</b> из <b>4</b>
-                        </span>
-                    </div>
-                    <a href="#" class="next_btn">
-                        <span class="desktop">
-                            Следующий шаг
-                        </span>
-                        <span class="media">
-                            Далее
-                        </span>
-                    </a>
+        <div class="swiper step-swp">
+            <div class="swiper-wrapper">
+
+                <!-- Step 1 -->
+                <div class="swiper-slide">
+                    <section class="step_one step-1">
+                        <div class="container">
+                            <h1>
+                                Заявление о возврате денежных средств
+                            </h1>
+                            <blockquote>
+                                <img src="./static/images/general/blockquote_icon.svg" alt="">
+                                <span>
+                                    В случае, если оплата производилась с иностранной карты, пожалуйста, не заполняйте форму и свяжитесь с нами в Telegram: <a href="#">@merion_academy_bot</a> или напишите на почту <a href="#">info@merionet.ru</a>
+                                </span>
+                            </blockquote>
+                            <h3>
+                                ШАГ 1. Основные данные
+                            </h3>
+                            <h6>
+                                Обратите внимание, что все поля обязательны для заполнения
+                            </h6>
+                            <div class="step_one_in">
+                                <div class="step_one_in_top">
+                                    <div class="step_one_in_top_block">
+                                        <span>
+                                            Ваше ФИО
+                                        </span>
+                                        <input type="text">
+                                    </div>
+                                    <div class="step_one_in_top_block">
+                                        <span>
+                                            Телефон
+                                        </span>
+                                        <input type="tel">
+                                    </div>
+                                </div>
+                                <div class="step_one_in_bottom">
+                                    <div class="step_one_in_top_block">
+                                        <span>
+                                            Почта, на которую был приобретен курс
+                                        </span>
+                                        <input type="text" placeholder="ivan@ivanov.ru">
+                                    </div>
+                                    <div class="step_one_in_top_block">
+                                        <span>
+                                            ИНН
+                                        </span>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="step_btns">
+                                <a href="#" class="prev_btn step_one_prev">
+                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_52_4248)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.82915 14.3269C10.057 14.0962 10.057 13.722 9.82915 13.4913L4.40829 8L9.82915 2.50875C10.057 2.27798 10.057 1.90384 9.82915 1.67307C9.60134 1.44231 9.23199 1.44231 9.00419 1.67307L3.17085 7.58217C2.94305 7.81293 2.94305 8.18707 3.17085 8.41784L9.00419 14.3269C9.23199 14.5577 9.60134 14.5577 9.82915 14.3269Z" fill="#1F1F1F"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_52_4248">
+                                        <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>
+                                        Назад
+                                    </span>
+                                </a>
+                                <div class="step_count">
+                                    <span>
+                                        Шаг <b>1</b> из <b>4</b>
+                                    </span>
+                                </div>
+                                <a href="#" class="next_btn step-swp__next">
+                                    <span class="desktop">
+                                        Следующий шаг
+                                    </span>
+                                    <span class="media">
+                                        Далее
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
                 </div>
+                <!-- Step 1 end -->
+
+                <!-- Step 2 -->
+                <div class="swiper-slide">
+                    <section class="step_one step-2">
+                        <div class="container">
+                            <h1>
+                                Заявление о возврате денежных средств
+                            </h1>
+                            <h3>
+                              ШАГ 2. Паспортные данные
+                            </h3>
+                            <h6>
+                              Обратите внимание, что все поля обязательны для заполнения
+                            </h6>
+                            <div class="step_one_in">
+                                <div class="step_one_in_top">
+                                    <div class="step_one_in_top_block">
+                                        <span>
+                                          Серия и номер паспорта
+                                        </span>
+                                        <input type="text" placeholder="45 13 №236478">
+                                    </div>
+                                    <div class="step_one_in_top_block">
+                                        <span>
+                                          Адрес регистрации по паспорту
+                                        </span>
+                                        <input type="tel" placeholder="г. Москва, пр-кт Вернадского, д. 180, корп. 2, кв. 367">
+                                    </div>
+                                </div>
+                                <div class="step_one_in_bottom step_two">
+                                    <div class="step_one_in_top_block">
+                                        <span>
+                                          Паспорт выдан
+                                        </span>
+                                        <input type="text" placeholder="Плейсхолдер">
+                                    </div>
+                                    <div class="step_one_in_top_block">
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="step_btns">
+                                <a href="#" class="prev_btn step-swp__prev">
+                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_52_4248)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.82915 14.3269C10.057 14.0962 10.057 13.722 9.82915 13.4913L4.40829 8L9.82915 2.50875C10.057 2.27798 10.057 1.90384 9.82915 1.67307C9.60134 1.44231 9.23199 1.44231 9.00419 1.67307L3.17085 7.58217C2.94305 7.81293 2.94305 8.18707 3.17085 8.41784L9.00419 14.3269C9.23199 14.5577 9.60134 14.5577 9.82915 14.3269Z" fill="#1F1F1F"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_52_4248">
+                                        <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>
+                                        Назад
+                                    </span>
+                                </a>
+                                <div class="step_count">
+                                    <span>
+                                        Шаг <b>2</b> из <b>4</b>
+                                    </span>
+                                </div>
+                                <a href="#" class="next_btn step-swp__next">
+                                    <span class="desktop">
+                                        Следующий шаг
+                                    </span>
+                                    <span class="media">
+                                        Далее
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Step 2 end -->
+
+                <!-- Step 3 -->
+                <div class="swiper-slide">
+                    <section class="step_one step-3">
+                        <div class="container">
+                            <h1>
+                              Заявление о возврате денежных средств
+                            </h1>
+                            <h3>
+                              ШАГ 3. Данные о курсе
+                            </h3>
+                            <h6>
+                              Обратите внимание, что все поля обязательны для заполнения
+                            </h6>
+                            <div class="step_one_in">
+                                <div class="step_one_in_top">
+                                    <div class="step_one_in_top_block">
+                                        <span>
+                                          Название курса, который вы приобрели
+                                        </span>
+                                        <input type="text" placeholder="Полный курс по сетевым технологиям">
+                                    </div>
+                                    <div class="step_one_in_top_block">
+                                        <span>
+                                          Дата покупки курса
+                                        </span>
+                                        <input type="tel" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="step_one_in_bottom step_two">
+                                    <div class="step_one_in_top_block">
+                                        <span>
+                                          Номер транзакции, по которой был оплачен курс, либо номер заказа, в случае приобретения его в рассрочку
+                                        </span>
+                                        <input type="text" placeholder="">
+                                    </div>
+                                    <div class="step_one_in_top_block">
+                                      <span>
+                                        Полная стоимость курса на момент его приобретения
+                                      </span>
+                                      <input type="tel" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step_one_in step_three_in">
+                                <div class="step_one_in_top">
+                                    <div class="step_one_in_top_block step_three_in_left">
+                                        <div class="step_one_in_top_block_top">
+                                            <span>
+                                                Пройденная часть курса в процентах
+                                            </span>
+                                            <ul>
+                                            <li>
+                                                <label class="checkbox-container bank_btn">
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                                <span class="label-text">
+                                                    0-10%
+                                                </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox-container bank_btn">
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                                <span class="label-text">
+                                                    20-50%
+                                                </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox-container bank_btn">
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                                <span class="label-text">
+                                                    50-80%
+                                                </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox-container bank_btn">
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                                <span class="label-text">
+                                                    50-80%
+                                                </span>
+                                                </label>
+                                            </li>
+                                            </ul>
+                                        </div>
+                                        <div class="step_one_in_top_block_bottom">
+                                            <span>
+                                                Запрашиваемая сумма к возврату
+                                            </span>
+                                            <input type="text">
+                                            <p>
+                                                Рассчитать сумму к возврату можно с помощью нашей Оферты в Положении о<br> возврате — <a href="https://wiki.merionet.ru/docs/edoferta.pdf">https://wiki.merionet.ru/docs/edoferta.pdf</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="step_one_in_top_block step_three_in_right">
+                                        <span>
+                                            Причина оформления возврата
+                                        </span>
+                                        <textarea name="" id=""></textarea>
+                                        <p>
+                                            Мы будем признательны, если вы подробно напишите почему хотели бы отказаться от дальнейшего прохождения курса. Для нас это очень важно
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step_one_in step_three_in">
+                                <ul class="step_three_checkbox">
+                                    <li class="error_in">
+                                        <span class="error">
+                                            Пожалуйста, дайте нам знать, что вы ознакомились с информацией ниже
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" id="checkbox">
+                                            <span class="checkmark">
+                                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 2.88885L5 7.33329L11 0.666626" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </label>
+                                        <span>
+                                            Меня проинформировали о возможности перевода на другой курс или о предоставлении пожизненной скидки в размере приобретенного курса на покупку будущих курсов компании «Мерион Нетворкс», однако я вынужден отказаться и прошу вернуть денежные средства за приобретенный мной курс, согласно оферте <a href="https://wiki.merionet.ru/docs/edoferta.pdf">https://wiki.merionet.ru/docs/edoferta.pdf</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" id="checkbox">
+                                            <span class="checkmark">
+                                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 2.88885L5 7.33329L11 0.666626" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </label>
+                                        <span>
+                                            Я проинформирован(а), что возврат денежных средств производится тем же способом, каким были получены денежные средства
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+            
+                            <div class="step_btns">
+                                <a href="#" class="prev_btn step-swp__prev">
+                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_52_4248)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.82915 14.3269C10.057 14.0962 10.057 13.722 9.82915 13.4913L4.40829 8L9.82915 2.50875C10.057 2.27798 10.057 1.90384 9.82915 1.67307C9.60134 1.44231 9.23199 1.44231 9.00419 1.67307L3.17085 7.58217C2.94305 7.81293 2.94305 8.18707 3.17085 8.41784L9.00419 14.3269C9.23199 14.5577 9.60134 14.5577 9.82915 14.3269Z" fill="#1F1F1F"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_52_4248">
+                                        <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>
+                                        Назад
+                                    </span>
+                                </a>
+                                <div class="step_count">
+                                    <span>
+                                        Шаг <b>3</b> из <b>4</b>
+                                    </span>
+                                </div>
+                                <a href="#" class="next_btn step-swp__next">
+                                    <span class="desktop">
+                                        Следующий шаг
+                                    </span>
+                                    <span class="media">
+                                        Далее
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Step 3 end -->
+
+                <!-- Step 4 -->
+                <div class="swiper-slide">
+                    <section class="step_one step-4">
+                        <div class="container">
+                            <h1>
+                              Заявление о возврате денежных средств
+                            </h1>
+                            <h3>
+                              ШАГ 4. Реквизиты для возврата
+                            </h3>
+                            <h6>
+                              Обратите внимание, что все поля обязательны для заполнения
+                            </h6>
+                            <div class="step_one_in">
+                              <span>
+                                Способ оплаты курса
+                              </span>
+                              <ul>
+                                <li>
+                                  <label class="checkbox-container bank_btn-1">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    <span class="label-text">
+                                      Оплата картой Российского банка
+                                    </span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label class="checkbox-container bank_btn-1">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    <span class="label-text">
+                                      Оплата сервисом «Долями»
+                                    </span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label class="checkbox-container bank_btn-1">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    <span class="label-text">
+                                      Оплата в рассрочку от «Т-Банка»
+                                    </span>
+                                  </label>
+                                </li>
+                              </ul>
+                            </div>
+            
+                            <div class="step_one_in step_four_in">
+                              <h6 class="step_four_in_title">
+                                Реквизиты для возврата при оплате картой Российского банка или с помощью сервиса «Долями»
+                              </h6>
+                              <div class="step_one_in_top">
+                                  <div class="step_one_in_top_block">
+                                      <span>
+                                        Номер карты
+                                      </span>
+                                      <input type="text">
+                                  </div>
+                                  <div class="step_one_in_top_block">
+                                      <span>
+                                        Получатель (ФИО владельца счета)
+                                      </span>
+                                      <input type="text" placeholder="IVAN IVANOV">
+                                  </div>
+                              </div>
+                              <div class="step_one_in_top">
+                                <div class="step_one_in_top_block">
+                                    <span>
+                                      Наименование банка
+                                    </span>
+                                    <input type="text" placeholder="ПАО «СБЕРБАНК»">
+                                </div>
+                                <div class="step_one_in_top_block">
+                                    <span>
+                                      Номер расчетного счета
+                                    </span>
+                                    <input type="text" placeholder="40817 8101 4300 1578002">
+                                </div>
+                              </div>
+                              <div class="step_one_in_bottom">
+                                  <div class="step_one_in_top_block">
+                                      <span>
+                                        БИК
+                                      </span>
+                                      <input type="text" placeholder="i044525225">
+                                  </div>
+                                  <div class="step_one_in_top_block">
+                                      <span>
+                                        Корреспондентский счет
+                                      </span>
+                                      <input type="text" placeholder="30101810400000000225">
+                                  </div>
+                              </div>
+                              <h5>
+                                Отправляя данную форму, вы подписываетесь под заявлением на возврат
+                              </h5>
+                            </div>
+            
+                            <div class="step_btns four_step_btn">
+                                <a href="#" class="prev_btn step-swp__prev">
+                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_52_4248)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.82915 14.3269C10.057 14.0962 10.057 13.722 9.82915 13.4913L4.40829 8L9.82915 2.50875C10.057 2.27798 10.057 1.90384 9.82915 1.67307C9.60134 1.44231 9.23199 1.44231 9.00419 1.67307L3.17085 7.58217C2.94305 7.81293 2.94305 8.18707 3.17085 8.41784L9.00419 14.3269C9.23199 14.5577 9.60134 14.5577 9.82915 14.3269Z" fill="#1F1F1F"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_52_4248">
+                                        <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>
+                                        Назад
+                                    </span>
+                                </a>
+                                <div class="step_count">
+                                    <span>
+                                        Шаг <b>4</b> из <b>4</b>
+                                    </span>
+                                </div>
+                                <button type="submit" class="next_btn step-swp__next">
+                                    <span class="desktop">
+                                      Отправить форму
+                                    </span>
+                                    <span class="media">
+                                      Отправить форму
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="submit_block">
+                                <button type="submit" class="submit_btn step-swp__next">
+                                    Отправить форму
+                                </button>
+                                <p>
+                                    Отправляя данную форму, вы подписываетесь под заявлением на возврат
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Step 4 end -->
+
+                <!-- success -->
+                <div class="swiper-slide">
+                    <section class="success">
+                        <div class="container">
+                          <div class="success_head">
+                            <h3>
+                              Спасибо, ваше<br> заявление получено!
+                            </h3>
+                            <p>
+                              В течение недели мы инициируем возврат. Точное время поступления денежных средств будет зависеть от вашего банка
+                            </p>
+                            <p class="left_text">
+                              Пожалуйста, если в течение 10 дней вы не получите средства, свяжитесь с нами в Telegram: <a href="#">@merion_academy_bot</a> или напишите на почту <a href="#">info@merionet.ru</a>
+                            </p>
+                          </div>
+                          <div class="success_in">
+                            <div class="success_left">
+                              <h3>
+                                Спасибо, ваше заявление получено!
+                              </h3>
+                              <p>
+                                В течение недели мы инициируем возврат. Точное время поступления денежных средств будет зависеть от вашего банка
+                              </p>
+                              <p class="left_text">
+                                Пожалуйста, если в течение 10 дней вы не получите средства, свяжитесь с нами в Telegram: <a href="#">@merion_academy_bot</a> или напишите на почту <a href="#">info@merionet.ru</a>
+                              </p>
+                            </div>
+                            <div class="success_right">
+                              <img class="success_desktop" src="./static/images/general/success_desktop.png" alt="">
+                              <img class="success_media" src="./static/images/general/success_media.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                <!-- success end -->
+
+                <!-- Fail -->
+                <div class="swiper-slide">
+                    <section class="fail">
+                        <div class="container">
+                          <div class="fail_in">
+                            <h3>
+                              Ой, что-то пошло не так 😓
+                            </h3>
+                            <p>
+                              Пожалуйста, свяжитесь с нами в Telegram: <a href="#">
+                                @merion_academy_bot
+                              </a> или напишите на почту <a href="#">info@merionet.ru</a>
+                            </p>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                <!-- Fail end -->
+
             </div>
-        </section>
+        </div>
+
     </main>
 
     <footer class="footer">
@@ -752,5 +1219,20 @@
 <script src="static/js/swiper-bundle.min.js"></script>
 <script src="static/js/jquery-3.3.1.min.js"> </script>
 <script src="static/js/main.js?v4"></script>
+
+    <script>
+        let bank_btns = document.querySelectorAll('.bank_btn-1');
+        let step_four_ins = document.querySelectorAll('.step_four_in');
+        
+        bank_btns.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+            step_four_ins.forEach((el) => {
+                el.classList.remove('active');
+            });
+        
+                step_four_ins[index].classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>

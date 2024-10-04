@@ -146,3 +146,12 @@ p.error-text {
 	color: #21ba45;
 	line-height: 50px;
 }
+
+.step-swp .swiper-slide:not(.swiper-slide-active) {
+	height: 0;
+	overflow: hidden;
+}
+
+.step_one_in_top_block input.error {
+	border-color: red!important;
+}
