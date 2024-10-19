@@ -249,8 +249,9 @@ const swp = new Swiper(stepSwp, {
   // initialSlide: 3,
   effect: 'fade',
   allowTouchMove: false,
-})
+});
 
+// Next buttons for validation
 let stepSwpNext = document.querySelectorAll('.step-swp__next');
 if (stepSwpNext.length) {
   stepSwpNext.forEach((btn, btnID) => {
@@ -259,7 +260,8 @@ if (stepSwpNext.length) {
 
       let validation = true;
 
-      if (btnID == 0) { // Step 1 validation
+      // Step 1 validation
+      if (btnID == 0) {
         let inputs = document.querySelectorAll('.step-1 .step_one_in_top_block .input');
 
         if (inputs.length) {
@@ -279,7 +281,8 @@ if (stepSwpNext.length) {
         }
       }
 
-      if (btnID == 1) { // Step 2 validation
+      // Step 2 validation
+      if (btnID == 1) {
         let inputs = document.querySelectorAll('.step-2 .step_one_in_top_block .input');
 
         if (inputs.length) {
@@ -299,33 +302,32 @@ if (stepSwpNext.length) {
         }
       }
 
-      if (btnID == 2) { // Step 3 validation
+      // Step 3 validation
+      if (btnID == 2) {
         let inputs = document.querySelectorAll('.step-3 .step_one_in_top_block .input');
         let reasonField = document.querySelector('.step-3 textarea'); // Textarea for return reason
         let radioButtons = document.querySelectorAll('.step-3 input[type="radio"]'); // Radio buttons for percentages
-        // let checkboxes = document.querySelectorAll('.step_three_checkbox input[type="checkbox"]'); // Checkboxes
-        // let checkboxesLabel = document.querySelectorAll('.checkbox-label');
         let checkboxes = document.querySelectorAll('.step_three_checkbox input[type="checkbox"]'); // Checkboxes
         let checkboxesLabel = document.querySelectorAll('.step_three_checkbox .checkbox-label'); // Labels for checkboxes
         let checkboxContent = document.querySelector('.step_one_in.step_three_in.checkbox-content'); // Checkbox content
         let errorIn = document.querySelector('.step_three_checkbox .error_in'); // Error section
 
-        // Iterate through the checkboxes and validate them
-        let checkboxValid = false; // Check if at least one checkbox is checked
-
+        // Validate checkboxes: ensure that both are checked
+        let checkboxValid = true; // Assume both checkboxes are valid
         checkboxes.forEach((checkbox, index) => {
           if (!checkbox.checked) {
             checkbox.classList.add('error');
             checkboxesLabel[index].classList.add('error'); // Add error class to the corresponding label
+            checkboxValid = false; // If any checkbox is unchecked, mark as invalid
           } else {
             checkbox.classList.remove('error');
             checkboxesLabel[index].classList.remove('error'); // Remove error class from the corresponding label if checked
-            checkboxValid = true; // At least one checkbox is checked
           }
         });
 
-        // If no checkbox is checked, add error classes
-        if (!checkboxValid) {
+        // If both checkboxes are not checked, show error and prevent moving to the next step
+        if (!checkboxValid || checkboxes.length < 2 || checkboxes[0].checked === false || checkboxes[1].checked === false) {
+          validation = false; // Mark form as invalid
           checkboxContent.classList.add('error'); // Add error class to checkbox-content
           errorIn.classList.add('show'); // Add show class to error_in
         } else {
@@ -367,33 +369,25 @@ if (stepSwpNext.length) {
           radioButtons.forEach(radio => radio.classList.remove('error'));
         }
 
-        // Checkbox validation
-        checkboxes.forEach((checkbox, index) => {
-          if (!checkbox.checked) {
-            validation = false;
-            checkbox.classList.add('error');
-            checkboxesLabel[index].classList.add('error'); // Add error class to the corresponding label
-          } else {
-            checkbox.classList.remove('error');
-            checkboxesLabel[index].classList.remove('error'); // Remove error class from the corresponding label if checked
-          }
-        });
-
+        // If validation is successful, slide to the next section
         if (validation) {
           swp.slideNext();
           window.scrollTo(0, 0);
         }
       }
 
-      if (btnID == 3 || btnID == 4) { // Step 4 validation
+      // Step 4 validation
+      if (btnID == 3 || btnID == 4) {
         let formBlock = document.querySelector('.step_four_in');
         let inputs = document.querySelectorAll('.step-4 .step_one_in_top_block input[type="text"]');
         let bankRadio = document.querySelectorAll('.bank_btn-1 input[type="radio"]');
 
-        if (!bankRadio[1].checked && !bankRadio[2].checked) {
+        // Check if bank radio is selected
+        if (!bankRadio[0].checked && !bankRadio[1].checked && !bankRadio[2].checked) {
           validation = false;
         }
 
+        // Validate input fields if formBlock is active
         if (formBlock.classList.contains('active')) {
           if (inputs.length) {
             inputs.forEach(inp => {
@@ -412,10 +406,12 @@ if (stepSwpNext.length) {
           window.scrollTo(0, 0);
         }
       }
-    }
+    };
   });
 }
+// Steppni saqlab qolish uchun resize hodisasi
 
+// Previous buttons for navigating back
 let stepSwpPrev = document.querySelectorAll('.step-swp__prev');
 if (stepSwpPrev.length) {
   stepSwpPrev.forEach((btn) => {
@@ -426,14 +422,31 @@ if (stepSwpPrev.length) {
     };
   });
 }
+// Swiper initialization
 
-try {
-  document.querySelector('.adress-input').addEventListener('input', function () {
+// try {
+function adjustTextareaHeight() {
+  const textarea = document.querySelector('.adress-input');
+
+  textarea.addEventListener('input', function () {
     this.style.height = 'auto'; // Yana hisoblash uchun oldingi heightni tozalash
     if (this.scrollHeight > this.offsetHeight) {
       this.style.height = this.scrollHeight + 'px'; // Faqat agar text ko'p bo'lsa, heightni oshiradi
     }
   });
-} catch (error) {
-
 }
+
+// Ekran kengligini tekshirish
+if (window.innerWidth < 768) {
+  adjustTextareaHeight();
+}
+
+// Ekran o'lchami o'zgarganda ham tekshirish
+window.addEventListener('resize', function () {
+  if (window.innerWidth < 768) {
+    adjustTextareaHeight();
+  }
+});
+// } catch (error) {
+
+// }
